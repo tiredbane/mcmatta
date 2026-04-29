@@ -2,20 +2,65 @@
 <html lang="en" class="scroll-smooth">
 
 <head>
+    <link href="./dist/output.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Maria Cianel B. Matta</title>
-    <meta name="description" content="Professional Portfolio of Maria Cianel B. Matta, a Full-Stack IT Student specializing in systems security and design.">
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <meta name="description"
+        content="Professional Portfolio of Maria Cianel B. Matta, a Full-Stack IT Student specializing in systems security and design.">
     <style>
-        body { background-color: #09090b; color: #fafafa; font-display: swap; }
-        .project-card { border: 1px solid #27272a; transition: all 0.3s ease; }
-        .project-card:hover { border-color: #fafafa; background-color: #18181b; }
-        .grayscale-img { filter: grayscale(100%); opacity: 0.7; transition: 0.3s; }
-        .project-card:hover .grayscale-img { opacity: 1; filter: grayscale(0%); }
-        input, textarea { background-color: #18181b; border: 1px solid #27272a; color: #fafafa; }
-        input:focus, textarea:focus { outline: none; border-color: #fafafa; }
-        ::selection { background-color: #fafafa; color: #000; }
+        body {
+            background-color: #09090b;
+            color: #fafafa;
+            font-display: swap;
+        }
+
+        .project-card {
+            border: 1px solid #27272a;
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            border-color: #fafafa;
+            background-color: #18181b;
+        }
+
+        .grayscale-img {
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: 0.3s;
+        }
+
+        .project-card:hover .grayscale-img {
+            opacity: 1;
+            filter: grayscale(0%);
+        }
+
+        input,
+        textarea {
+            background-color: #18181b;
+            border: 1px solid #27272a;
+            color: #fafafa;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #fafafa;
+        }
+
+        ::selection {
+            background-color: #fafafa;
+            color: #000;
+        }
+        :root {
+            background-color: #09090b;
+            color: #fafafa;
+        }
+        header {
+            min-height: 400px;
+            display: block;
+        }
     </style>
 </head>
 
@@ -24,11 +69,15 @@
     <header class="max-w-4xl mx-auto pt-32 px-6">
         <h1 class="text-4xl font-bold tracking-tighter mb-4 text-zinc-100">Full-Stack IT Student</h1>
         <p class="text-xl text-zinc-400 max-w-2xl leading-relaxed">
-            I'm Maria Cianel B. Matta, a student currently exploring the intersection of system security and efficient software design. I'm passionate about learning new technologies and documenting my progress as I grow into a future IT professional.
+            I'm Maria Cianel B. Matta, a student currently exploring the intersection of system security and efficient
+            software design. I'm passionate about learning new technologies and documenting my progress as I grow into a
+            future IT professional.
         </p>
         <div class="mt-8 flex gap-4">
-            <a href="#projects" class="px-5 py-2 bg-zinc-100 text-black font-medium hover:bg-white transition">View Projects</a>
-            <a href="https://www.linkedin.com/in/cianelmatta/" target="_blank" class="px-5 py-2 border border-zinc-700 hover:border-zinc-100 transition">LinkedIn</a>
+            <a href="#projects" class="px-5 py-2 bg-zinc-100 text-black font-medium hover:bg-white transition">View
+                Projects</a>
+            <a href="https://www.linkedin.com/in/cianelmatta/" target="_blank"
+                class="px-5 py-2 border border-zinc-700 hover:border-zinc-100 transition">LinkedIn</a>
         </div>
     </header>
 
@@ -39,13 +88,18 @@
             <section class="project-card p-8 rounded-lg group">
                 <div class="flex flex-col md:flex-row gap-8">
                     <div class="w-full md:w-1/2 bg-zinc-800 aspect-video rounded overflow-hidden">
-                        <img src="images/project10.png" alt="JavaScript Functions Showcase" width="400" height="225" fetchpriority="high" class="grayscale-img w-full h-full object-cover">
+                        <img src="images/project10.png" alt="JavaScript Functions Showcase" width="400" height="225"
+                            fetchpriority="high" class="grayscale-img w-full h-full object-cover">
                     </div>
                     <div class="w-full md:w-1/2">
                         <h3 class="text-2xl font-semibold mb-2">JavaScript Functions</h3>
-                        <p class="text-zinc-500 text-xs font-mono mb-4 tracking-widest uppercase font-bold">HTML5 • Tailwind CSS • JavaScript</p>
-                        <p class="text-zinc-400 text-sm mb-6 leading-relaxed">A deep dive into functional programming and DOM manipulation.</p>
-                        <a href="https://github.com/tiredbane/baneKUDING.git" target="_blank" class="text-sm underline underline-offset-4 hover:text-zinc-100 transition">Source Code →</a>
+                        <p class="text-zinc-500 text-xs font-mono mb-4 tracking-widest uppercase font-bold">HTML5 •
+                            Tailwind CSS • JavaScript</p>
+                        <p class="text-zinc-400 text-sm mb-6 leading-relaxed">A deep dive into functional programming
+                            and DOM manipulation.</p>
+                        <a href="https://github.com/tiredbane/baneKUDING.git" target="_blank"
+                            class="text-sm underline underline-offset-4 hover:text-zinc-100 transition">Source Code
+                            →</a>
                     </div>
                 </div>
             </section>
@@ -53,13 +107,18 @@
             <section class="project-card p-8 rounded-lg group">
                 <div class="flex flex-col md:flex-row gap-8">
                     <div class="w-full md:w-1/2 bg-zinc-800 aspect-video rounded overflow-hidden">
-                        <img src="images/project2.png" alt="Tailwind Styling Portfolio" width="400" height="225" loading="lazy" class="grayscale-img w-full h-full object-cover">
+                        <img src="images/project2.png" alt="Tailwind Styling Portfolio" width="400" height="225"
+                            loading="lazy" class="grayscale-img w-full h-full object-cover">
                     </div>
                     <div class="w-full md:w-1/2">
                         <h3 class="text-2xl font-semibold mb-2">Tailwind Styling</h3>
-                        <p class="text-zinc-500 text-xs font-mono mb-4 tracking-widest uppercase font-bold">HTML5 • Tailwind CSS</p>
-                        <p class="text-zinc-400 text-sm mb-6 leading-relaxed">Exploration of utility-first CSS to build responsive interfaces.</p>
-                        <a href="https://github.com/tiredbane/baneKUDING.git" target="_blank" class="text-sm underline underline-offset-4 hover:text-zinc-100 transition">Source Code →</a>
+                        <p class="text-zinc-500 text-xs font-mono mb-4 tracking-widest uppercase font-bold">HTML5 •
+                            Tailwind CSS</p>
+                        <p class="text-zinc-400 text-sm mb-6 leading-relaxed">Exploration of utility-first CSS to build
+                            responsive interfaces.</p>
+                        <a href="https://github.com/tiredbane/baneKUDING.git" target="_blank"
+                            class="text-sm underline underline-offset-4 hover:text-zinc-100 transition">Source Code
+                            →</a>
                     </div>
                 </div>
             </section>
@@ -67,13 +126,17 @@
             <section class="project-card p-8 rounded-lg group">
                 <div class="flex flex-col md:flex-row gap-8">
                     <div class="w-full md:w-1/2 bg-zinc-800 aspect-video rounded overflow-hidden">
-                        <img src="images/project30.jpg" alt="QuickBiz Portal Interface" width="400" height="225" loading="lazy" class="grayscale-img w-full h-full object-cover">
+                        <img src="images/project30.jpg" alt="QuickBiz Portal Interface" width="400" height="225"
+                            loading="lazy" class="grayscale-img w-full h-full object-cover">
                     </div>
                     <div class="w-full md:w-1/2">
                         <h3 class="text-2xl font-semibold mb-2">QuickBiz Messengers Portal</h3>
-                        <p class="text-zinc-500 text-xs font-mono mb-4 tracking-widest uppercase font-bold">Node.js • Python • SQL • DBMS</p>
-                        <p class="text-zinc-400 text-sm mb-6 leading-relaxed">A robust management portal integrating database logic with backend scripting.</p>
-                        <span class="text-xs font-mono text-zinc-600 uppercase tracking-widest">[ Private Repository ]</span>
+                        <p class="text-zinc-500 text-xs font-mono mb-4 tracking-widest uppercase font-bold">Node.js •
+                            Python • SQL • DBMS</p>
+                        <p class="text-zinc-400 text-sm mb-6 leading-relaxed">A robust management portal integrating
+                            database logic with backend scripting.</p>
+                        <span class="text-xs font-mono text-zinc-600 uppercase tracking-widest">[ Private Repository
+                            ]</span>
                     </div>
                 </div>
             </section>
@@ -81,13 +144,19 @@
             <section class="project-card p-8 rounded-lg group">
                 <div class="flex flex-col md:flex-row gap-8">
                     <div class="w-full md:w-1/2 bg-zinc-800 aspect-video rounded overflow-hidden">
-                        <img src="images/project4.png" alt="ClacKeys E-Commerce UI/UX Design" width="400" height="225" loading="lazy" class="grayscale-img w-full h-full object-cover">
+                        <img src="images/project4.png" alt="ClacKeys E-Commerce UI/UX Design" width="400" height="225"
+                            loading="lazy" class="grayscale-img w-full h-full object-cover">
                     </div>
                     <div class="w-full md:w-1/2">
                         <h3 class="text-2xl font-semibold mb-2">ClacKeys E-Commerce</h3>
-                        <p class="text-zinc-500 text-xs font-mono mb-4 tracking-widest uppercase font-bold">Figma • UI/UX Design • Wireframing</p>
-                        <p class="text-zinc-400 text-sm mb-6 leading-relaxed">High-fidelity prototyping focusing on user flow and accessibility.</p>
-                        <a href="https://www.figma.com/design/YVC9xgQ7lkCOJDoEOguHsE/MATTA_65?node-id=0-1" target="_blank" class="text-sm underline underline-offset-4 hover:text-zinc-100 transition">View Prototype →</a>
+                        <p class="text-zinc-500 text-xs font-mono mb-4 tracking-widest uppercase font-bold">Figma •
+                            UI/UX Design • Wireframing</p>
+                        <p class="text-zinc-400 text-sm mb-6 leading-relaxed">High-fidelity prototyping focusing on user
+                            flow and accessibility.</p>
+                        <a href="https://www.figma.com/design/YVC9xgQ7lkCOJDoEOguHsE/MATTA_65?node-id=0-1"
+                            target="_blank"
+                            class="text-sm underline underline-offset-4 hover:text-zinc-100 transition">View Prototype
+                            →</a>
                     </div>
                 </div>
             </section>
@@ -120,24 +189,30 @@
         <h2 class="text-3xl font-bold mb-8 italic">Contact Me</h2>
         <form id="contactForm" class="grid grid-cols-1 gap-6 max-w-md">
             <div>
-                <label for="email" class="block text-[10px] uppercase tracking-widest text-zinc-500 mb-2 font-bold font-mono">Email Address</label>
-                <input type="email" name="email" id="email" required class="w-full p-4 text-sm rounded focus:ring-1 focus:ring-zinc-400 transition-all">
+                <label for="email"
+                    class="block text-[10px] uppercase tracking-widest text-zinc-500 mb-2 font-bold font-mono">Email
+                    Address</label>
+                <input type="email" name="email" id="email" required
+                    class="w-full p-4 text-sm rounded focus:ring-1 focus:ring-zinc-400 transition-all">
             </div>
             <div>
-                <label for="message" class="block text-[10px] uppercase tracking-widest text-zinc-500 mb-2 font-bold font-mono">Message Content</label>
-                <textarea name="message" id="message" rows="4" required class="w-full p-4 text-sm rounded focus:ring-1 focus:ring-zinc-400 transition-all"></textarea>
+                <label for="message"
+                    class="block text-[10px] uppercase tracking-widest text-zinc-500 mb-2 font-bold font-mono">Message
+                    Content</label>
+                <textarea name="message" id="message" rows="4" required
+                    class="w-full p-4 text-sm rounded focus:ring-1 focus:ring-zinc-400 transition-all"></textarea>
             </div>
-            <button type="submit" id="submitBtn" class="w-full py-4 bg-zinc-100 text-black font-bold text-xs uppercase tracking-widest hover:bg-white transition-all">
+            <button type="submit" id="submitBtn"
+                class="w-full py-4 bg-zinc-100 text-black font-bold text-xs uppercase tracking-widest hover:bg-white transition-all">
                 Submit Query
             </button>
         </form>
     </section>
 
-    <footer class="max-w-4xl mx-auto py-20 px-6 border-t border-zinc-900 text-center text-zinc-600 text-xs font-mono uppercase tracking-widest">
+    <footer
+        class="max-w-4xl mx-auto py-20 px-6 border-t border-zinc-900 text-center text-zinc-600 text-xs font-mono uppercase tracking-widest">
         &copy; 2026 Maria Cianel B. Matta. All rights reserved.
     </footer>
-
-    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         const contactForm = document.getElementById('contactForm');
         const submitBtn = document.getElementById('submitBtn');
