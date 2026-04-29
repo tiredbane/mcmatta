@@ -2,17 +2,25 @@
 <html lang="en" class="scroll-smooth">
 
 <head>
-    <link href="./dist/output.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Maria Cianel B. Matta</title>
     <meta name="description"
         content="Professional Portfolio of Maria Cianel B. Matta, a Full-Stack IT Student specializing in systems security and design.">
+    <link href="./dist/output.css" rel="stylesheet">
     <style>
-        body {
+        :root {
             background-color: #09090b;
             color: #fafafa;
+        }
+
+        body {
             font-display: swap;
+        }
+
+        header {
+            min-height: 400px;
+            display: block;
         }
 
         .project-card {
@@ -53,19 +61,10 @@
             background-color: #fafafa;
             color: #000;
         }
-        :root {
-            background-color: #09090b;
-            color: #fafafa;
-        }
-        header {
-            min-height: 400px;
-            display: block;
-        }
     </style>
 </head>
 
 <body class="font-sans antialiased">
-
     <header class="max-w-4xl mx-auto pt-32 px-6">
         <h1 class="text-4xl font-bold tracking-tighter mb-4 text-zinc-100">Full-Stack IT Student</h1>
         <p class="text-xl text-zinc-400 max-w-2xl leading-relaxed">
@@ -203,9 +202,8 @@
                     class="w-full p-4 text-sm rounded focus:ring-1 focus:ring-zinc-400 transition-all"></textarea>
             </div>
             <button type="submit" id="submitBtn"
-                class="w-full py-4 bg-zinc-100 text-black font-bold text-xs uppercase tracking-widest hover:bg-white transition-all">
-                Submit Query
-            </button>
+                class="w-full py-4 bg-zinc-100 text-black font-bold text-xs uppercase tracking-widest hover:bg-white transition-all">Submit
+                Query</button>
         </form>
     </section>
 
@@ -213,6 +211,7 @@
         class="max-w-4xl mx-auto py-20 px-6 border-t border-zinc-900 text-center text-zinc-600 text-xs font-mono uppercase tracking-widest">
         &copy; 2026 Maria Cianel B. Matta. All rights reserved.
     </footer>
+
     <script>
         const contactForm = document.getElementById('contactForm');
         const submitBtn = document.getElementById('submitBtn');
