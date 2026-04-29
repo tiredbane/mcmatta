@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Maria Cianel B. Matta</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description"
+        content="Professional Portfolio of Maria Cianel B. Matta, a Full-Stack IT Student specializing in systems security and design.">
     <style>
         body {
             background-color: #09090b;
@@ -59,9 +60,8 @@
         <h1 class="text-4xl font-bold tracking-tighter mb-4 text-zinc-100">Full-Stack IT Student</h1>
         <p class="text-xl text-zinc-400 max-w-2xl leading-relaxed">
             I'm Maria Cianel B. Matta, a student currently exploring the intersection of system security and efficient
-            software design. I'm
-            passionate about learning new technologies and documenting my progress as I grow into a future IT
-            professional.
+            software design. I'm passionate about learning new technologies and documenting my progress as I grow into a
+            future IT professional.
         </p>
         <div class="mt-8 flex gap-4">
             <a href="#projects" class="px-5 py-2 bg-zinc-100 text-black font-medium hover:bg-white transition">View
@@ -78,7 +78,7 @@
             <section class="project-card p-8 rounded-lg group">
                 <div class="flex flex-col md:flex-row gap-8">
                     <div class="w-full md:w-1/2 bg-zinc-800 aspect-video rounded overflow-hidden">
-                        <img src="images/project1.png" alt="JavaScript"
+                        <img src="images/project1.png" alt="JavaScript Functions Showcase" loading="lazy"
                             class="grayscale-img w-full h-full object-cover">
                     </div>
                     <div class="w-full md:w-1/2">
@@ -97,7 +97,8 @@
             <section class="project-card p-8 rounded-lg group">
                 <div class="flex flex-col md:flex-row gap-8">
                     <div class="w-full md:w-1/2 bg-zinc-800 aspect-video rounded overflow-hidden">
-                        <img src="images/project2.png" alt="Tailwind" class="grayscale-img w-full h-full object-cover">
+                        <img src="images/project2.png" alt="Tailwind Styling Portfolio" loading="lazy"
+                            class="grayscale-img w-full h-full object-cover">
                     </div>
                     <div class="w-full md:w-1/2">
                         <h3 class="text-2xl font-semibold mb-2">Tailwind Styling</h3>
@@ -115,7 +116,8 @@
             <section class="project-card p-8 rounded-lg group">
                 <div class="flex flex-col md:flex-row gap-8">
                     <div class="w-full md:w-1/2 bg-zinc-800 aspect-video rounded overflow-hidden">
-                        <img src="images/project3.jpg" alt="QuickBiz" class="grayscale-img w-full h-full object-cover">
+                        <img src="images/project3.jpg" alt="QuickBiz Portal Interface" loading="lazy"
+                            class="grayscale-img w-full h-full object-cover">
                     </div>
                     <div class="w-full md:w-1/2">
                         <h3 class="text-2xl font-semibold mb-2">QuickBiz Messengers Portal</h3>
@@ -132,7 +134,8 @@
             <section class="project-card p-8 rounded-lg group">
                 <div class="flex flex-col md:flex-row gap-8">
                     <div class="w-full md:w-1/2 bg-zinc-800 aspect-video rounded overflow-hidden">
-                        <img src="images/project4.png" alt="ClacKeys" class="grayscale-img w-full h-full object-cover">
+                        <img src="images/project4.png" alt="ClacKeys E-Commerce UI/UX Design" loading="lazy"
+                            class="grayscale-img w-full h-full object-cover">
                     </div>
                     <div class="w-full md:w-1/2">
                         <h3 class="text-2xl font-semibold mb-2">ClacKeys E-Commerce</h3>
@@ -176,13 +179,14 @@
         <h2 class="text-3xl font-bold mb-8 italic">Contact Me</h2>
         <form id="contactForm" class="grid grid-cols-1 gap-6 max-w-md">
             <div>
-                <label class="block text-[10px] uppercase tracking-widest text-zinc-500 mb-2 font-bold font-mono">Email
+                <label for="email"
+                    class="block text-[10px] uppercase tracking-widest text-zinc-500 mb-2 font-bold font-mono">Email
                     Address</label>
                 <input type="email" name="email" id="email" required
                     class="w-full p-4 text-sm rounded focus:ring-1 focus:ring-zinc-400 transition-all">
             </div>
             <div>
-                <label
+                <label for="message"
                     class="block text-[10px] uppercase tracking-widest text-zinc-500 mb-2 font-bold font-mono">Message
                     Content</label>
                 <textarea name="message" id="message" rows="4" required
@@ -200,13 +204,13 @@
         &copy; 2026 Maria Cianel B. Matta. All rights reserved.
     </footer>
 
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         const contactForm = document.getElementById('contactForm');
         const submitBtn = document.getElementById('submitBtn');
 
         contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-
             const originalBtnText = submitBtn.innerText;
             submitBtn.innerText = "SENDING...";
             submitBtn.disabled = true;
@@ -223,7 +227,7 @@
                     alert('Message sent successfully!');
                     contactForm.reset();
                 } else {
-                    alert('Error: Message failed to send. Check SendGrid setup.');
+                    alert('Error: Message failed to send. Check Worker variables.');
                 }
             } catch (err) {
                 alert('Connection error. Is your Worker live?');
