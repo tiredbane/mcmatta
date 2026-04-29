@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio | Maria Cianel B. Matta</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
@@ -30,58 +30,133 @@
 
         .project-card:hover .grayscale-img {
             opacity: 1;
+            filter: grayscale(0%);
+        }
+
+        input,
+        textarea {
+            background-color: #18181b;
+            border: 1px solid #27272a;
+            color: #fafafa;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #fafafa;
+        }
+
+        ::selection {
+            background-color: #fafafa;
+            color: #000;
         }
     </style>
 </head>
 
 <body class="font-sans antialiased">
 
-    <header class="max-w-4xl mx-auot pt-32 px-6">
-        <h1 class="text-4xl font-bold tracking-tighter mb-4">Maria Cianel B. Matta</h1>
+    <header class="max-w-4xl mx-auto pt-32 px-6">
+        <h1 class="text-4xl font-bold tracking-tighter mb-4 text-zinc-100">Maria Cianel B. Matta</h1>
         <p class="text-xl text-zinc-400 max-w-2xl leading-relaxed">
             I am a 3rd-year IT student focused on developing secure and efficient technical systems. Passionate about
-            turning
-            concepts into functional, high-performing applications.
+            turning concepts into functional, high-performing applications.
         </p>
         <div class="mt-8 flex gap-4">
             <a href="#projects" class="px-5 py-2 bg-zinc-100 text-black font-medium hover:bg-white transition">View
                 Projects</a>
-            <a href="https://www.linkedin.com/in/cianelmatta/"
+            <a href="https://www.linkedin.com/in/cianelmatta/" target="_blank"
                 class="px-5 py-2 border border-zinc-700 hover:border-zinc-100 transition">LinkedIn</a>
         </div>
     </header>
+
     <main id="projects" class="max-w-4xl mx-auto py-32 px-6">
-        <h2 class="text-sm uppercase tracking-[0.2em] text-zinc-500 mb-12 italic">// Selected Works</h2>
-        <div class="grid grid-cols-1 gap-12">
+        <h2 class="text-sm uppercase tracking-[0.2em] text-zinc-500 mb-12 italic font-mono">// Selected Works</h2>
+
+        <div class="flex flex-col gap-12">
+
             <section class="project-card p-8 rounded-lg group">
                 <div class="flex flex-col md:flex-row gap-8">
                     <div class="w-full md:w-1/2 bg-zinc-800 aspect-video rounded overflow-hidden">
-                        <div class="grayscale-img flex items-center justify-center h-full text-zinc-600">
-                            <img src="images/project1.png" alt="project 1 sc">
-                        </div>
-                        <div class="w-full md:w-1/2">
-                            <h3 class="text-2xl font-semibold mb-2">JavaScript Functions</h3>
-                            <p class="text-zinc-400 text-sm mb-4">HTML5 • Tailwind CSS • JavaScript</p>
-                            <a href="https://github.com/tiredbane/baneKUDING.git"
-                                class="text-sm underline underline-offset-4 hover:text-zinc-400">Source</a>
-                        </div>
-                    </div>
-            </section>
-            <section class="project-card p-8 rounded-lg group">
-                <div class="flex flex-col md:flex-row gap-8">
-                    <div class="w-full md:w-1/2 bg-zinc-800 aspect-video rounded overflow-hidden">
-                        <div class="grayscale-img flex items-center justify-center h-full text-zinc-600">
-                            <img src="images/project2.png" alt="">
-                        </div>
+                        <img src="images/project1.png" alt="JavaScript Functions"
+                            class="grayscale-img w-full h-full object-cover">
                     </div>
                     <div class="w-full md:w-1/2">
-                        <h3 class="text-2xl font-semibold mb-2">Tailwind Styling</h3>
-                        <p class="text-zinc-400 text-sm mb-4">HTML5 • Tailwind CSS</p>
-                        <a href="https://github.com/tiredbane/baneKUDING.git"
-                            class="text-sm underline underline-offset-4 hover:text-zinc-400">Source</a>
+                        <h3 class="text-2xl font-semibold mb-2">JavaScript Functions</h3>
+                        <p class="text-zinc-500 text-xs font-mono mb-4 tracking-widest uppercase font-bold">HTML5 •
+                            Tailwind CSS • JavaScript</p>
+                        <p class="text-zinc-400 text-sm mb-6 leading-relaxed">
+                            A deep dive into functional programming and DOM manipulation to create interactive user
+                            experiences.
+                        </p>
+                        <a href="https://github.com/tiredbane/baneKUDING.git" target="_blank"
+                            class="text-sm underline underline-offset-4 hover:text-zinc-100 transition">Source Code
+                            →</a>
                     </div>
                 </div>
             </section>
+
+            <section class="project-card p-8 rounded-lg group">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="w-full md:w-1/2 bg-zinc-800 aspect-video rounded overflow-hidden">
+                        <img src="images/project2.png" alt="Tailwind Styling"
+                            class="grayscale-img w-full h-full object-cover">
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-2xl font-semibold mb-2">Tailwind Styling</h3>
+                        <p class="text-zinc-500 text-xs font-mono mb-4 tracking-widest uppercase font-bold">HTML5 •
+                            Tailwind CSS</p>
+                        <p class="text-zinc-400 text-sm mb-6 leading-relaxed">
+                            Exploration of utility-first CSS to build responsive interfaces with optimized performance.
+                        </p>
+                        <a href="https://github.com/tiredbane/baneKUDING.git" target="_blank"
+                            class="text-sm underline underline-offset-4 hover:text-zinc-100 transition">Source Code
+                            →</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-card p-8 rounded-lg group">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="w-full md:w-1/2 bg-zinc-800 aspect-video rounded overflow-hidden">
+                        <img src="images/project3.jpg" alt="QuickBiz Messenger"
+                            class="grayscale-img w-full h-full object-cover">
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-2xl font-semibold mb-2">QuickBiz Messengers Portal</h3>
+                        <p class="text-zinc-500 text-xs font-mono mb-4 tracking-widest uppercase font-bold">Node.js •
+                            Python • SQL • DBMS</p>
+                        <p class="text-zinc-400 text-sm mb-6 leading-relaxed">
+                            A robust management portal integrating database logic with backend scripting for optimized
+                            business communications.
+                        </p>
+                        <span class="text-xs font-mono text-zinc-600 uppercase tracking-widest">[ Private Repository
+                            ]</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-card p-8 rounded-lg group">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="w-full md:w-1/2 bg-zinc-800 aspect-video rounded overflow-hidden">
+                        <img src="images/project4.png" alt="ClacKeys" class="grayscale-img w-full h-full object-cover">
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-2xl font-semibold mb-2">ClacKeys E-Commerce</h3>
+                        <p class="text-zinc-500 text-xs font-mono mb-4 tracking-widest uppercase font-bold">Figma •
+                            UI/UX Design • Wireframing</p>
+                        <p class="text-zinc-400 text-sm mb-6 leading-relaxed">
+                            High-fidelity prototyping for a mechanical keyboard e-commerce platform focusing on user
+                            flow and accessibility.
+                        </p>
+                        <a href="https://www.figma.com/design/YVC9xgQ7lkCOJDoEOguHsE/MATTA_65?node-id=0-1"
+                            target="_blank"
+                            class="text-sm underline underline-offset-4 hover:text-zinc-100 transition">View Prototype
+                            →</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 
 </html>
